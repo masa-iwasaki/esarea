@@ -1,6 +1,11 @@
 global.jQuery = $ = require('jquery')
 require('jquery.selection/src/jquery.selection.js')
 
+meta = document.createElement('meta')
+meta.name = "esarea"
+meta.content = "installed"
+document.getElementsByTagName('head')[0].appendChild(meta);
+
 return if location.host.match(/qiita\.com|esa\.io|docbase\.io|pplog\.net|lvh\.me|slack\.com|mimemo\.io|kibe\.la|hackmd\.io/)
 
 suggesting = null
